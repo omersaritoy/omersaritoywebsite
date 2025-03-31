@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ömer Sarıtoy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ömer Sarıtoy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Hakkında</a></li>
+          <li><a href="#experience">Deneyim</a></li>
+
+          <li><a href="#projects">Projeler</a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ömer Sarıtoy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Hakkında</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Deneyim</a></li>
+
+          <li><a href="#projects" onclick="toggleMenu()">Projeler</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">İletişim</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class= "circular-img" src="./assets/profile.jpg"  alt="omer saritoy profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Merhaba,Ben </p>
+        <h1 class="title">Ömer Sarıtoy</h1>
+        <p class="section__text__p2">Bilgisayar Mühendisi</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/omersaritoy.pdf')"
+          >
+            CV indir
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            İletişim 
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+          
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/ömer-sarıtoy'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/omersaritoy' "
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Hakkımda daha fazlası</p>
+      <h1 class="title">Hakkımda</h1>
+      <p>Yazılım geliştirme ve algoritmalara tutkulu, analitik ve yaratıcı problem çözme yeteneğine sahip bir mühendis olarak, 
+        disiplinli ve çözüm odaklı bir yaklaşımla çalışıyorum. Güçlü iletişim ve iş birliği becerilerim sayesinde farklı ekiplerle 
+        verimli bir şekilde çalışabiliyor, yenilikçi projelerde yer alarak kendimi sürekli geliştirmeyi hedefliyorum. Teknoloji dünyasında 
+        ilerlemeye ve etkili çözümler üretmeye büyük bir heyecan duyuyorum.</p>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            class="circular-img"
+            src="./assets/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Deneyim</h3>
+              <p><br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Eğitim</h3>
+              <p>Lisans Eğitimi<br />Bilgisayar Mühendisliği</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Ben Ömer Sarıtoy, backend teknolojilerine ilgi duyan  bir bilgisayar mühendisiyim. 
+                Node.js, PostgreSQL, Java, .NET, ASP.NET ve Entity Framework gibi teknolojilerle backend sistemleri geliştirme konusunda 
+                bilgi ve deneyime sahibim. 
+                BiLiG Operational Excellence Consultants'ta backend developer olarak, API'ler ve veritabanı şemaları üzerinde çalıştım. 
+                Ayrıca, Java ve Spring Boot kullanarak RESTful API'ler geliştirmeyi öğrendiğim Çekino Bilgi Teknolojileri A.Ş.'deki stajımda,
+                backend süreçlerinin verimliliğini artırmaya yönelik çözümler sundum. 
+                Öğrenmeye ve kendimi geliştirmeye her zaman açığım ve yazılım geliştirme yolculuğumda daha fazla deneyim kazanmaktan heyecan 
+                duyuyorum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Keşfet</p>
+      <h1 class="title">Deneyim</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Yetenekler</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>.NET</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python Basics</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C Programlama</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>OOP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            
+            
+              <h2 class="experience-sub-title">Backend Development Tech</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>PostgreSQL, MSSQL, MySQL</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Spring Boot ve Framework</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>ASP.NET Core API</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            
+            
+            <h2 class="experience-sub-title">Diğer Yetenekler</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Version Control</h3>
+                  <p>Git, GitHub</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Soft Skills</h3>
+                  <p>Problem-solving, Time Management, Teamwork, Adaptability</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      
+      <h1 class="title">Projeler</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Preowned E-Commerce site</h2>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/omersaritoy/preowned'"
+              >
+                  Github
+              </button>
+  
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+       
+            </div>
+            <h2 class="experience-sub-title project-title">Book Store Web Site with ASP.NET</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/omersaritoy/E-Commerce_MVC'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+             
+            </div>
+            <h2 class="experience-sub-title project-title">Summer Intership Project </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/omersaritoy/internship-project'"
+              >
+                Github
+              </button>
+
+            </div>
+          
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+       
+            </div>
+            <h2 class="experience-sub-title project-title">Diğer Projeler için Github sayfamı kontrol edebilirsiniz</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/omersaritoy'"
+              >
+                Github
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">İletişime Geçin</p>
+      <h1 class="title">İletişim Bilgileri</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">omer.saritoy2@gmail.com
+        </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/ömer-sarıtoy" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Hakkında</a></li>
+            <li><a href="#experience">Deneyim</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Telif hakkı &#169; 2025 Ömer Sarıtoy. Tüm Hakklar Saklıdır.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
